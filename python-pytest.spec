@@ -4,8 +4,8 @@
 %global pylib_version 1.4.8
 
 Name:           python-%{pkgname}
-Version:        3.0.7
-Release:        CROC5%{?dist}
+Version:        3.1.0
+Release:        CROC1TEST%{?dist}
 Summary:        Simple powerful testing with Python
 License:        MIT
 URL:            http://pytest.org
