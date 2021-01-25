@@ -5,7 +5,7 @@
 
 Name:           python-%{pkgname}
 Version:        3.0.7
-Release:        CROC4%{?dist}
+Release:        CROC5%{?dist}
 Summary:        Simple powerful testing with Python
 License:        MIT
 URL:            http://pytest.org
@@ -45,6 +45,8 @@ BuildRequires:  python36-six
 Requires:       python36-py >= %{pylib_version}
 Requires:       python%{python3_pkgversion}-setuptools
 Requires:       python36-six
+
+Provides:       python36-%{pkgname}
 
 %description -n python%{python3_pkgversion}-%{pkgname}
 py.test provides simple, yet powerful testing for Python.
@@ -114,6 +116,9 @@ find %{buildroot}%{python3_sitelib} \
 %endif
 
 %changelog
+* Mon Jan 18 2021 Andrey Kulaev <adkulaev@gmail.com> 3.0.7-5
+- Make pytest provides python36
+
 * Mon Dec 28 2020 Andrey Kulaev <adkulaev@gmail.com> 3.0.7-4
 - Make pytest obsolete
 
