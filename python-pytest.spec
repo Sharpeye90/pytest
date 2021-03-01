@@ -1,11 +1,12 @@
 %bcond_without python3
+%bcond_without python2
 
 %define pkgname pytest
 %global pylib_version 1.4.8
 
 Name:           python-%{pkgname}
 Version:        3.0.7
-Release:        CROC5%{?dist}
+Release:        CROC6TEST%{?dist}
 Summary:        Simple powerful testing with Python
 License:        MIT
 URL:            http://pytest.org
@@ -27,8 +28,6 @@ BuildRequires:  python2-six
 Requires:       python-py >= %{pylib_version}
 Requires:       python2-setuptools
 Requires:       python2-six
-
-Obsoletes: 	pytest
 
 %description -n python2-%{pkgname}
 py.test provides simple, yet powerful testing for Python.
